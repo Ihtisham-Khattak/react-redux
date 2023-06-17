@@ -1,3 +1,6 @@
+//  Action: It sends data from your application to the Redux
+//  store and serves as the only way to update the store.
+
 //Logic of the Todos
 import {
   ADD_TODO,
@@ -61,7 +64,7 @@ export const updateTodo = (id, todo) => {
 //Aciton of Completed Todo
 export const completedTodo = (id) => {
   return {
-    type: CLEAR_ALL_TODO,
+    type: COMPLETED_TODO,
     payload: {
       selectedTodoID: id,
     },
